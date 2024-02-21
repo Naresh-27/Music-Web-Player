@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <div class="logo_player">
+                    <div class="logo">
+                        <img src="images/logo.jpg" alt="">
+                    </div>
+                    <div class="player"><span>
+                            <h2>Music Player</h2></span>
+                    </div>
+                </div>
+            </li>
+            <li><span>
+                    <h2>Home</2>
+            </li>
+            <li><span>
+                    <h2>Trending</h2>
+            </li>
+            <li>
+                <i class="bi bi-search" id="searchicon"></i>
+                <input type="search" placeholder="   Search songs..." id="search">
+            </li>
+            <li><button>Sign up</button>
+                <button>Log in</button>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left">
+                <h1>Playlist</h1>
+                <div class="Playlists">
+                    <h4><span></span><i class="bi bi-music-note-beamed"></i>Your playlist</h4>
+                    <h4><span></span><i class="bi bi-music-note-beamed"></i>Most Listened</h4>
+                    <h4><span></span><i class="bi bi-music-note-beamed"></i>Favourites</h4>
+                </div>
+
+
+                <div class="song_menu">
+                    <li class="card">
+
+                        <span>01</span>
+                        <img src="images/song_img1.png" alt="">
+                        <h5>Jai ho Janatha
+                            <br>
+                            <div class="subtitle">ar rahman</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>02</span>
+                        <img src="images/song_img2.png" alt="">
+                        <h5>Jai Ho
+                            <br>
+                            <div class="subtitle">ar rahman</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="2" ></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>03</span>
+                        <img src="images/song_img3.png" alt="">
+                        <h5>Chandra chooda
+                            <br>
+                            <div class="subtitle">ar rahman</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="3"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>04</span>
+                        <img src="images/song_img4.png" alt="">
+                        <h5>Husn
+                            <br>
+                            <div class="subtitle">ar rahman</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="4"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>05</span>
+                        <img src="images/song_img5.png" alt="">
+                        <h5>Heeriye
+                            <br>
+                            <div class="subtitle">arjit singh</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="5"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>06</span>
+                        <img src="images/song_img6.png" alt="">
+                        <h5>Pularikalo
+                            <br>
+                            <div class="subtitle">gopi sundar</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="6"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>07</span>
+                        <img src="images/song_img7.png" alt="">
+                        <h5>Malare
+                            <br>
+                            <div class="subtitle">rajesh murugesan</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="7"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>08</span>
+                        <img src="images/song_img8.png" alt="">
+                        <h5>Vande Matharam
+                            <br>
+                            <div class="subtitle">ar rahman</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="8"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>09</span>
+                        <img src="images/song_img9.png" alt="">
+                        <h5>Vande Matharam
+                            <br>
+                            <div class="subtitle">ar rahman</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="9"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>10</span>
+                        <img src="images/song_img10.png" alt="">
+                        <h5>Vande Matharam
+                            <br>
+                            <div class="subtitle">ar rahman</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="10"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>11</span>
+                        <img src="images/song_img11.png" alt="">
+                        <h5>Vande Matharam
+                            <br>
+                            <div class="subtitle">ar rahman</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="11"></i>
+
+                    </li>
+                    <li class="card">
+
+                        <span>12</span>
+                        <img src="images/song_img12.png" alt="">
+                        <h5>Vande Matharam
+                            <br>
+                            <div class="subtitle">ar rahman</div>
+                        </h5>
+                        <i class="bi playlistplay bi-play-circle-fill" id="12"></i>
+
+                    </li>
+
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="song_container">
+                    <h3>Popular Songs</h3>
+                    <div class="songs">
+
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="13"></i>
+                            <div class="poster">
+                                <img src="images/song_img13.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Vande  Matharam
+                                    <br>
+                                    <div class="subtitle">ar  rahman</div>
+                                </h5>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="14"></i>
+                            <div class="poster">
+                                <img src="images/song_img14.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Alone <br>
+                                    <div class="subtitle">alen walker</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="15"></i>
+                            <div class="poster">
+                                <img src="images/song_img15.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Hymn for the Weekend <br>
+                                    <div class="subtitle">cold play</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="16"></i>
+                            <div class="poster">
+                                <img src="images/song_img16.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Till I Collapse <br>
+                                    <div class="subtitle">eminem</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="17"></i>
+                            <div class="poster">
+                                <img src="images/song_img17.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Peaky Blinders <br>
+                                    <div class="subtitle">otnicka</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="18"></i>
+                            <div class="poster">
+                                <img src="images/song_img18.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Love Story <br>
+                                    <div class="subtitle">indila</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="19"></i>
+                            <div class="poster">
+                                <img src="images/song_img19.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Middle of the Night <br>
+                                    <div class="subtitle">elley duhe</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="20"></i>
+                            <div class="poster">
+                                <img src="images/song_img20.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>After Hours <br>
+                                    <div class="subtitle">the weekend</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="21"></i>
+                            <div class="poster">
+                                <img src="images/song_img21.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Ily (I love you baby) <br>
+                                    <div class="subtitle">surf mesa</div></h5>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="22"></i>
+                            <div class="poster">
+                                <img src="images/song_img22.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Movements <br>
+                                    <div class="subtitle">pham</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="23"></i>
+                            <div class="poster">
+                                <img src="images/song_img23.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Falling <br>
+                                    <div class="subtitle">trevor daniel</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="24"></i>
+                            <div class="poster">
+                                <img src="images/song_img24.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Industry Baby <br>
+                                    <div class="subtitle">lil nas x</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="25"></i>
+                            <div class="poster">
+                                <img src="images/song_img25.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Lose Your Self <br>
+                                    <div class="subtitle">eminem</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="26"></i>
+                            <div class="poster">
+                                <img src="images/song_img26.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Blinding Lights <br>
+                                    <div class="subtitle">the weekend</div>
+                                </h5>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="27"></i>
+                            <div class="poster">
+                                <img src="images/song_img27.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5> Escapism<br>
+                                    <div class="subtitle">raye</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="28"></i>
+                            <div class="poster">
+                                <img src="images/song_img28.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Faded <br>
+                                    <div class="subtitle">alen walker </div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="29"></i>
+                            <div class="poster">
+                                <img src="images/song_img29.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Snow Crystals <br>
+                                    <div class="subtitle">babalos</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="30"></i>
+                            <div class="poster">
+                                <img src="images/song_img30.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Girls Like You<br>
+                                    <div class="subtitle">maroon 5</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="31"></i>
+                            <div class="poster">
+                                <img src="images/song_img31.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5> Dusk Till Down <br>
+                                    <div class="subtitle">zayn </div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="32"></i>
+                            <div class="poster">
+                                <img src="images/song_img32.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>People <br>
+                                    <div class="subtitle">libianca</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="33"></i>
+                            <div class="poster">
+                                <img src="images/song_img33.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Ignite <br>
+                                    <div class="subtitle">alen walker</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="34"></i>
+                            <div class="poster">
+                                <img src="images/song_img34.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>STAY <br>
+                                    <div class="subtitle">justin beiber</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="35"></i>
+                            <div class="poster">
+                                <img src="images/song_img35.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Star boy <br>
+                                    <div class="subtitle">the weekend</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="36"></i>
+                            <div class="poster">
+                                <img src="images/song_img36.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Heat Waves <br>
+                                    <div class="subtitle">glass animals</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="37"></i>
+                            <div class="poster">
+                                <img src="images/song_img37.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Believer<br>
+                                    <div class="subtitle">imagine dragons</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="38"></i>
+                            <div class="poster">
+                                <img src="images/song_img38.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5>Shape of You <br>
+                                    <div class="subtitle">ed sheeran</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="39"></i>
+                            <div class="poster">
+                                <img src="images/song_img39.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5> SNAP <br>
+                                    <div class="subtitle">rosa linn</div>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <i class="bi playlistplay bi-play-circle-fill" id="40"></i>
+                            <div class="poster">
+                                <img src="images/song_img40.png" alt="">
+                            </div>
+                            <div class="song_name">
+                                <h5> Lovely <br>
+                                    <div class="subtitle">billie eilish</div>
+                                </h5>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="artist_container">
+                    <h3>Top Artists</h3>
+                    <div class="artists">
+
+                        <div class="artist_card">
+                            <img src="images/artist.png" alt="">
+                            <h4><span>The Weekend</span></h4>
+                        </div>
+                        <div class="artist_card">
+                            <img src="images/artist2.png" alt="">
+                            <h4><span>Mani Sharma</span></h4>
+                        </div>
+                        <div class="artist_card">
+                            <img src="images/artist3.png" alt="">
+                            <h4><span>Anirudh Ravichander</span></h4>
+                        </div>
+                        <div class="artist_card">
+                            <img src="images/artist4.png" alt="">
+                            <h4><span>Alen Walker</span></h4>
+                        </div>
+                        <div class="artist_card">
+                            <img src="images/artist5.png" alt="">
+                            <h4><span>XXX tentacion</span></h4>
+                        </div>
+                        <div class="artist_card">
+                            <img src="images/artist6.png" alt="">
+                            <h4><span>AR Rahman</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="Playbar">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="images/song_img13.png" id="poster_playbar">
+            <h5 id="title">Vande Matharam
+                <div class="subtitle">ar  rahman</div>
+               
+            </h5>
+
+            <div class="icons">
+                <div class="shuffle">
+                    <i class="bi bi-shuffle"></i>
+                </div>
+
+                <div class="prev_song">
+                    <i class="bi bi-skip-start-fill" id="prev_song"></i>
+                </div>
+
+                <div class="playbtn">
+                    <i class="bi bi-play-circle-fill" id="master_play"></i>
+                </div>
+
+                <div class="next_song">
+                    <i class="bi bi-skip-end-fill" id="next_song"></i>
+                </div>
+
+                <div class="repeat">
+                    <i class="bi bi-repeat"></i>
+                </div>
+
+            </div>
+            <div class="song_start"><span>0.00</span></div>/
+            <div class="song_end"><span>0.00</span></div>
+            <div class="volume" >
+                <i class="bi bi-volume-up-fill" id="volume"></i>
+            </div>
+            <br>
+
+        </div>
+        <div class="seekbar">
+            <input type="range" id="seekbar" min="0%" max="100%">
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
